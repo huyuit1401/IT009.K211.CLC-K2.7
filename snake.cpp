@@ -81,6 +81,13 @@ void drawSnake()
 	}
 	cout << endl;
 	cout << "Score: " << score << endl;
+	
+	//Show moving guide
+	cout << "\n|MOVING GUIDE|\n";
+	cout << "W: move up\n";
+	cout << "A: move left\n";
+	cout << "S: move down\n";
+	cout << "D: move right\n";
 }
 
 void changeDir()
