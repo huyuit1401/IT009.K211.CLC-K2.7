@@ -45,7 +45,26 @@ void drawSnake()
 
 void changeDir()
 {
-	// Doi huong di
+	if (_kbhit()) {
+		switch (_getch())
+		{
+		case 'a':
+			dir = LEFT;
+			break;
+		case 'w':
+			dir = UP;
+			break;
+		case 's':
+			dir = DOWN;
+			break;
+		case 'd':
+			dir = RIGHT;
+			break;
+		case 'x':
+			gameover = true;
+			break;
+		}
+	}
 }
 
 void moveSnake()
