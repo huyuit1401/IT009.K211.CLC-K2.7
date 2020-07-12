@@ -29,7 +29,7 @@ void initGame()
 {
 	gameover = false;
 	shutDown = false;
-	dir = STOP;
+	dir = RIGHT;
 	snake[0].x = width / 2;
 	snake[0].y = height / 2;
 	spawnFruit();
