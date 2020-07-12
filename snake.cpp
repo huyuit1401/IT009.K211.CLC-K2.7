@@ -21,12 +21,20 @@ eDirection dir;
 
 void spawnFruit()
 {
-	// Tao thuc an
+	fruitX = rand() % width;
+	fruitY = rand() % height;
 }
 
 void initGame()
 {
-	// Khoi tao game
+	gameover = false;
+	shutDown = false;
+	dir = STOP;
+	snake[0].x = width / 2;
+	snake[0].y = height / 2;
+	spawnFruit();
+	score = 0;
+	snakeLength = 1;
 }
 
 
